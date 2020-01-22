@@ -24,9 +24,19 @@ namespace WaterDetector
             _value = 0;
         }
 
+
         public void Add(int value)
         {
             _value += value;
+        }
+
+        public string Detect()
+        {
+            if (_value == Capacity)
+            {
+                Reset();
+                return " WaterTank byla vyprázdněná";
+            }
         }
     }
 }

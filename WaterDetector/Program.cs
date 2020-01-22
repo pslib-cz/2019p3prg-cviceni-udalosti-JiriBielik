@@ -23,6 +23,7 @@ namespace WaterDetector
                 wt5.Add(r.Next(5));
                 Thread.Sleep(1000);
             }
+            Console.ReadKey();
         }
     }
 }
